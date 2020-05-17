@@ -20,13 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY = '0l(_bprt$tg8p#0&x@4n3(hwdx1fcluf%r_^-uf^xk)qcdc34c'
+SECRET_KEY = os.environ.get('SECRET_KEY_PROD')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dyramblog.herokuapp.com']
 
 
 # Application definition
